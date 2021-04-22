@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2? family = Montserrat: ital, wght @ 0,100; 0,400; 1,100 & display = swap');
+
+* {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* se pone margin y padding para que entre header main y footer no salga una linea en blanco de espacio */
+
+}
+
+body {
+    /* background-image: url(fondocastillo.jpg);
+    background-color: rgba(19, 38, 65, 0.514);
+    background-repeat: no-repeat;
+    background-size: 140%; */
+    /* background-image: url(fondocastillo.jpg); */
+    background-attachment: fixed; /* fija el fondo y mueve el contenido*/
+    background-size: cover; /* cubre toda la pantalla el fondo */
+   
+
+    background-position: center center; 
+    /* position: absolute; */
+    /* min-height: 100vh; */
+    margin: 0;
+    padding: 0;
+    color: black;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    /* background-image: url(tituloHP.png);
+    background-size: 19%; 
+    background-repeat: no-repeat;
+    background-position: center center; */
+    /* margin-top: 0.6rem; */
+    background-color: rgb(147,179, 190);
+    
+}
+
+
+
+.menuListAll {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+main {
+    background-image: url(./img/fondocastillo.jpg);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+    
+    /* se pone el min-height: y el width para que no se suba el footer, ocupa todo */
+}
+.menuListAll a{
+    background-color: rgba(210, 240, 245, 0.288); 
+}
+.menuListAll a.active {
+    background-color: white;
+}
+.menuListAll a:first-child{
+    border-radius: 1rem 0 0 1rem;
+}
+.menuListAll a:last-child{
+    border-radius: 0 1rem 1rem 0;
+}
+.menuList {
+    padding: 1rem 1rem;
+    margin: 1rem;
+    text-transform: uppercase;
+    color: rgb(13, 50,57);
+    
+}
+
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color:inherit;
+
+}
+   .menuListAll a:hover {
+    background-color: rgb(204, 239, 240);
+   }
+
+  
+
+.HP {
+    width: 14rem;
+    height: 8rem;
+    text-align: center;
+    margin-left: 10rem;
+}
+
+.logo {
+    margin-left: 1rem;
+    margin-top: 1.2rem;
+}
+
+.logoImg {
+    width: 4rem;
+    height: 4rem;
+    /* las imagenes se limita el contenedor donde está la imagen*/
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    /* para que no pixele se da el 100% de ancho y auto altura. Luego ya se tratan las imagenes en su contendor*/
+
+}
+
+
+.all {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: rgba(19, 38, 65, 0.514); */
+    position: relative;
+    
+
+}
+
+
+
+.all > div {
+    padding: 3rem;
+    margin: 3rem;
+}
+
+.characterContainer {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    text-align: center;
+    /*margin-top: 5rem;*/
+    /* border: 2px solid rgb(165, 165, 142); */
+    width: 45%;
+    /* background-color: rgba(147, 179, 190, 0.034); */
+
+}
+
+.historiaCasa {
+    width: 45%;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    /* background-color: rgba(147, 179, 190, 0.034); */
+
+    
+}
+
+.textOfHouse {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.salonHouse {
+    margin-top: 2rem;
+    width: 20.188rem;
+    height: 24.188rem;
+}
+
+
+.characterContainer img {
+    width: 12.5rem;
+    height: 18.75rem;
+}
+
+.nameCharacter {
+    margin-bottom: 0.7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+
+.imgCharacter {
+
+    border: 2px solid rgb(165, 165, 142);
+}
+
+.actorCharacter {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0.5rem 0 1rem 0;
+    font-size: 1.25rem;
+}
+
+.escudo {
+    width: 11.25rem;
+    height:15.625rem ;
+}
+
+.escudoClase img {
+    width: 9.375rem;
+    height: 12.5rem;
+}
+
+.patronusCharacter {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0.5rem 0 1rem 0;
+    font-size: 1.25rem;
+}
+
+.houseCharacter {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0.5rem 0 1rem 0;
+    font-size: 1.25rem;
+}
+
+.tituloBusqueda {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 1rem;
+
+}
+
+.input {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    text-align: center;
+
+}
+
+.inputText {
+    padding: 0.5rem;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(210, 240, 245);
+    font-size: 1rem;
+    
+}
+.clickMe {
+    padding: 0.5rem;
+    background-color: rgb(210, 240, 245);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.clickMe:hover {
+    background-color: rgb(147,179, 190);
+    cursor: pointer;
+}
+
+.likeButton {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem ;
+    background-color: rgb(210, 240, 245);
+    text-transform: uppercase;
+    outline: none;
+}
+
+.likeButton:hover {
+    background-color: rgb(147,179, 190);
+    cursor: pointer;
+}
+
+.likeImage {
+    margin-bottom: 0;
+}
+
+
+.contenedorInfo {
+
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+.historiaHarryPotter h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 0;
+     padding-bottom: 4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    color: rgb(1, 7, 14);
+}
+
+.textOfHP {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+.historiaHarryPotter, .libros {
+    width: 50%;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+
+
+
+.h2likes {
+    text-align: center;
+    padding-top: 3rem;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    color: rgb(1, 7, 14);
+}
+
+.bookContainer  {
+    width: 12rem;
+    height: 15rem;
+    padding: 2rem;
+    cursor: pointer;
+    
+}
+
+.booksHP {
+    display: flex;
+    padding-top: 3rem;
+}
+
+.allFilms {
+    
+    width: 100%;
+    padding: 4rem;
+}
+
+.filmHP img {
+    width: 300px;
+    height: 450px;
+}
+
+.firstFilms {
+    display: flex;
+    justify-content: center;
+    margin-right: 6rem;
+   
+   
+}
+
+.secondFilms {
+    display: flex;
+    justify-content: center;
+}
+
+.filmHP {
+    margin: 1rem;
+}
+
+.buttonDelete {
+    background-color: rgb(210, 240, 245);
+    padding: 0.5rem;
+    text-transform: uppercase;
+    width: 12.5rem;
+    outline: none;
+    margin-top: -5px;
+}
+
+.buttonDelete:hover {
+    padding: 0.5rem;
+    background-color: rgb(147,179, 190);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.likeName {
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 1.5rem;
+}
+
+
+
+.favoritosContainer {
+    display: flex;
+   
+}
+
+
+.nameImgBoton {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 0.5rem 0;
+    flex-wrap: wrap;
+  
+
+
+}
+
+
+.nameImgBoton img {
+    width: 12.5rem;
+    height: 18.75rem;
+    
+}
+
+
+
+
+.footer {
+    background-color: rgb(147,179, 190);
+    color: black;
+    min-height: 5vh;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconosFooter {
+    display: flex;
+   
+}
+
+.iconoSimple img {
+    width: 40px;
+    height: 40px;
+}
+
+.iconoSimple {
+    margin: 0.5rem 1rem 0.5rem 0.5rem;
+}
+
+.pFooter {
+    margin: 1rem 0 0 1rem;
+    font-size: small;
+}
+
+.favPerson{
+    max-width: 300px;
+    margin-bottom: 2rem;
+}
+
+
+@media screen and (max-width: 767px) {
+
+main {
+    background-image: none;
+    background-color: rgb(184, 224, 238);
+}
+
+
+
+
+.header {
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+
+
+.logo {
+    text-align: center;
+    
+}
+
+.HP {
+    margin: auto;
+     
+}
+
+.menuListAll {
+    justify-content: center;
+    
+}
+
+.contenedorInfo {
+    flex-direction: column;
+}
+
+/* .textOfHP {
+    text-align: center;
+} */
+
+.historiaHarryPotter {
+    width: auto;
+}
+
+
+
+.booksHP {
+    justify-content: center;
+}
+
+.nameImgBoton {
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    
+}
+.favPerson {
+    margin-bottom: 2rem;
+}
+
+.firstFilms, .secondFilms{
+    flex-wrap: wrap;
+    margin-right: 0;
+}
+
+.filmHP img {
+    max-width:200px;
+    height: 350px;
+}
+
+
+.characterContainer img {
+    max-width: 10.5rem;
+    max-height: 16.5rem;
+}
+
+.all {
+    flex-direction: column;
+}
+
+.characterContainer {
+justify-content: center;
+text-align: center;
+align-items: center;
+width: auto;
+}
+
+.historiaCasa {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: auto;
+}
+
+}
